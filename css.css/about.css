@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 30px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#item-menuu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(0, 0, 140);
+}
+a{
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    font-weight: 500;
+}
+#btnToggle,#btnMenu{
+    background: transparent;
+    border: none;
+    color: #555;
+    cursor: pointer;
+}
+.menu a:hover,
+#btnToggle:hover{
+    transform: scale(1.1);
+    color: rgb(0, 0, 140);
+    transition: all 0.1s ease;
+}
+.menu a:active,
+#btnToggle:active{
+    transform: scale(1.1);
+    color: rgb(0, 0, 140);
+    transition: all 0.1s ease;
+}
+.about{
+    max-width: 1230px;
+    margin: auto;
+}
+.hdd{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 140);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.paragraph{
+    text-align: justify;
+    line-height: 25px;
+}
+#btnMenu{
+    display: none;
+}
+#mobile-navbar{
+    display: none;
+}
+.contact{
+    max-width: 1230px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+.contact:focus{
+    border: none;
+    outline: none;
+}
+.content input{
+    padding: 15px;
+    min-width: 475px;
+    margin: 10px;
+    border: 2px solid rgb(0, 0, 140);
+    color: rgb(0, 0, 140);
+    border-radius: 5px;
+}
+#adddress{
+    min-width: 975px;
+    padding: 15px;
+}
+textarea{
+    min-width: 975px;
+    margin: 10px;
+    text-align: center;
+    padding: 10%;
+    border: 2px solid rgb(0, 0, 140);
+}
+#btn-submit{
+    padding: 8px 50px;
+    margin-top: 10px;
+    margin-left: 43%;
+    background: transparent;
+    color: rgb(0, 0, 140);
+    border: 3px solid rgb(0, 0, 140);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15%;
+}
+#btn-submit:hover{
+    background-color: rgb(0, 0, 140);
+    color: white;
+    transition: all 0.3s ease;
+}
+#btn-submit:active{
+    transform: scale(0.9);
+}
+.player-role #dev{
+    margin-top: 15%;
+    margin-bottom: 42%;
+}
+#titttle{
+
+    color: rgb(0, 0, 140);
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+.paragraph{
+    font-size: 15px;
+    font-family: "Koulen", sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 13%;
+    color: rgb(0, 0, 140);
+}
+@media screen and (max-width: 700px){
+    .hdd{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: rgb(0, 0, 140);
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    .paragraph{
+        font-size: 13px;
+        line-height: 25px;
+
+    }
+    #item-menuu{
+        display: none;
+    }
+    #btnMenu{
+        display: block;
+    }
+    .player-role #dev{
+        max-width: 300px;
+        padding-top: 40%;
+        margin: auto;
+        font-size: 20px;
+        margin-bottom: 140%;
+    }
+    #mobile-navbar{
+        display: flex;
+        background-color: rgb(0, 0, 140);
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0px;
+        transition: all 1s ease;
+    }
+    #mobile-navbar.active{
+        height: 200px;
+    }
+    #mobile-navbar a{
+        color: white;
+        padding: 8px;
+    }
+    .about{
+        max-width: 300px;
+        margin: auto;
+    }
+    .oo{
+        text-align: justify;
+    }
+    /* contact */
+    .contact{
+        max-width: 350px;
+        margin: 40px auto;
+    }
+    .content input{
+        min-width: 330px;
+        padding: 4%;
+    }
+    #adddress{
+        min-width: 330px;
+        padding: 4%;
+    }
+    textarea{
+        min-width: 330px;
+        padding: 20%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #titttle{
+        padding-top: 5% ;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: rgb(0, 0, 140);
+    }
+    #btn-submit{
+        margin-left: 29%;
+    }
+    
+}
